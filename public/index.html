@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hercules Chrysanthos 3170183">
+    <meta name="description" content="Search books">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="static/js/main.js" type="text/javascript"></script>
+    <title>Books Search</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Books Collection</a></h1>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li class = "current"><a href="/">Books Search</a></li>
+            <li><a href="favorites">Favorite Books</a></li>
+        </ul>
+    </nav>
+    <section class="inputSection">
+        <h2>Find books that you prefer!</h2>
+        <p class="search">
+            <input type="text" id="givenTitle" placeholder="Enter title or part of it">
+            <button class="button" onclick="getTitles()">Search</button>
+        </p>
+    </section>
+    <main id="results">
+
+    </main>
+    <footer>
+        <p>Copyright &copy; 2021, <strong>Hercules Chrysanthos</strong></p>
+    </footer>
+</body>
+</html>
